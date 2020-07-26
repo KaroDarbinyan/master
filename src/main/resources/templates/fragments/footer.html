@@ -5,34 +5,41 @@
                 <div class="row">
                     <div class="col-sm-24 col-lg-10">
                         <div class="footer-top-first">
-
-
                             <div class="logo upper">
                                 <a th:href="@{/}">Мастер <span>на все руки</span></a>
-
                                 <div>ИП Иванов С.М.</div>
-
                             </div>
-
-
                             <div class="footer-text">
                                 По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
                                 который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
                             </div>
-
                         </div>
                     </div>
                     <div class="col-sm-8 col-lg-6">
                         <div class="footer-menu">
                             <div class="title">Меню</div>
                             <ul class="">
-                                <li class="first"><a th:href="@{o-kompanii}">О компании</a></li>
-                                <li><a th:href="@{uslugi/index}">Услуги</a></li>
-                                <li><a th:href="@{portfolio/index}">Портфолио</a></li>
-                                <li><a th:href="@{novosti/index}">Новости</a></li>
-                                <li><a th:href="@{prajs}">Прайс</a></li>
-                                <li><a th:href="@{otzyivyi}">Отзывы</a></li>
-                                <li class="last"><a th:href="@{kontaktyi}">Контакты</a></li>
+                                <li class="first">
+                                    <a th:href="@{o-kompanii}">О компании</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{uslugi}">Услуги</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{portfolio}">Портфолио</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{novosti}">Новости</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{prajs}">Прайс</a>
+                                </li>
+                                <li>
+                                    <a th:href="@{otzyivyi}">Отзывы</a>
+                                </li>
+                                <li class="last">
+                                    <a th:href="@{kontaktyi}">Контакты</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -40,16 +47,18 @@
                         <div class="footer-contacts">
                             <div class="title">Контакты</div>
 
-                            <div class="footer-contacts-el footer-phone"><a href="tel:896100001100">8 (9610)
-                                000-11-00</a>
+                            <div class="footer-contacts-el footer-phone">
+                                <a href="tel:896100001100">8 (9610) 000-11-00</a>
                             </div>
 
 
-                            <div class="footer-contacts-el footer-phone"><a href="tel:896100002200">8 (9610)
-                                000-22-00</a></div>
+                            <div class="footer-contacts-el footer-phone">
+                                <a href="tel:896100002200">8 (9610) 000-22-00</a>
+                            </div>
 
 
-                            <div class="footer-contacts-el footer-email"><a href="mailto:info@sitename.com">info@sitename.com</a>
+                            <div class="footer-contacts-el footer-email">
+                                <a href="mailto:info@sitename.com">info@sitename.com</a>
                             </div>
 
 
@@ -58,31 +67,39 @@
 
                             <div class="social-links">
 
-                                <a href="index.html#" class="fb_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" class="fb_link">
+                                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                                </a>
 
 
-                                <a href="index.html#" class="ok_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+                                <a href="#" class="ok_link">
+                                    <i class="fa fa-vk" aria-hidden="true"></i>
+                                </a>
 
 
-                                <a href="index.html#" class="tw_link"><i class="fa fa-twitter"
-                                                                         aria-hidden="true"></i></a>
+                                <a href="#" class="tw_link">
+                                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                                </a>
 
 
-                                <a href="index.html#" class="inst_link"><i class="fa fa-instagram"
-                                                                           aria-hidden="true"></i></a>
+                                <a href="#" class="inst_link">
+                                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                                </a>
 
 
-                                <a href="index.html#" class="ok_link"><i class="fa fa-odnoklassniki"
-                                                                         aria-hidden="true"></i></a>
+                                <a href="#" class="ok_link">
+                                    <i class="fa fa-odnoklassniki" aria-hidden="true"></i>
+                                </a>
 
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-8 footer-top-last text-right-sm">
                         <div class="title">Получить консультацию</div>
-                        <a href="index.html#callback" class="btn fancyboxModal"
-                           data-theme="Заказ обратного звонка">Заказать
-                            звонок</a>
+                        <a th:href="@{#callback}" class="btn fancyboxModal"
+                           data-theme="Заказ обратного звонка">
+                            Заказать звонок
+                        </a>
                         <div class="push20"></div>
                         <div class="element-description">
                             Остались вопросы?
@@ -97,11 +114,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
-                    © 2020 «Master». Разработано в <a href="https://collary.ru/" target="_blank">collary.ru</a>
+                    © 2020 «Master». Разработано в
+                    <a href="https://collary.ru/" target="_blank">collary.ru</a>
                 </div>
                 <div class="col-sm-12 text-right-sm">
-                    <div>Для данного сайта мы рекомендуем хостинг <a
-                            href="https://timeweb.com/ru/services/hosting/?i=15036" target="_blank">Timeweb</a></div>
+                    <div>Для данного сайта мы рекомендуем хостинг
+                        <a href="https://timeweb.com/ru/services/hosting/?i=15036" target="_blank">Timeweb</a>
+                    </div>
                 </div>
             </div>
         </div>
