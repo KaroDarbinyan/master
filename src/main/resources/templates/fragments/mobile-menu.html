@@ -1,0 +1,78 @@
+<div xmlns:th="http://www.thymeleaf.org" th:fragment="mobile-menu" th:remove="tag">
+    <a th:href="@{/}" class="menu-btn">
+        <span class="line1"></span>
+        <span class="line2"></span>
+        <span class="line3"></span>
+    </a>
+    <div class="overlay"></div>
+    <div class="mobile-menu">
+        <div class="uMenuH">
+            <ul class="">
+                <li class="first uMenuItemA"><a th:href="@{/}">Главная</a></li>
+                <li><a th:href="@{/o-kompanii}">О компании</a></li>
+                <li class="uWithSubmenu"><a th:href="@{/uslugi/index}">Услуги</a>
+                    <ul class="">
+                        <li class="first uWithSubmenu"><a th:href="@{uslugi-elektrika}">Услуги электрика</a>
+                            <ul class="">
+                                <li class="first"><a th:href="@{ustanovka-schetchika}">Установка счетчика</a></li>
+                                <li class="last"><a th:href="@{ustanovka-elektro-shhitka}">Установка электро-щитка</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="uWithSubmenu"><a th:href="@{uslugi-santexnika}">Услуги сантехника</a>
+                            <ul class="">
+                                <li class="first"><a th:href="@{ustanovka-dushevoj-kabinyi}">Установка душевой
+                                    кабины</a>
+                                </li>
+                                <li><a th:href="@{ustanovka-smesitelya}">Установка смесителя</a></li>
+                                <li><a th:href="@{ustanovka-stiralnoj-mashinyi}">Установка стиральной машины</a></li>
+                                <li class="last"><a th:href="@{ustanovka-rakovinyi}">Установка раковины</a></li>
+                            </ul>
+                        </li>
+                        <li><a th:href="@{ustanovka-i-obsluzhivanie-plastikovyix-okon}">Установка и обслуживание
+                            пластиковых
+                            окон</a></li>
+                        <li><a th:href="@{montazh-natyazhnyix-potolkov}">Монтаж натяжных потолков</a></li>
+                        <li><a th:href="@{sborka-mebeli}">Сборка мебели</a></li>
+                        <li><a th:href="@{ustanovka-i-obsluzhivanie-kondiczionerov}">Установка и обслуживание
+                            кондиционеров</a></li>
+                        <li><a th:href="@{ustanovka-vyityazhek}">Установка вытяжек</a></li>
+                        <li><a th:href="@{ustanovka-dverej}">Установка дверей</a></li>
+                        <li><a th:href="@{montazh-sistem-videonablyudeniya}">Монтаж систем видеонаблюдения</a></li>
+                        <li><a th:href="@{montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij}">Монтаж, обслуживание
+                            пожарных систем, сигнализаций</a></li>
+                        <li><a th:href="@{uslugi-raznorabochix-montazhnikov-gruzchikov}">Услуги разнорабочих,
+                            монтажников,
+                            грузчиков</a></li>
+                        <li class="last"><a th:href="@{uborka-pomeshhenij}">Уборка помещений</a></li>
+                    </ul>
+                </li>
+                <li class="uWithSubmenu"><a th:href="@{portfolio/index}">Портфолио</a>
+                    <ul class="">
+                        <li class="first"><a th:href="@{stroitelstvo-zagorodnogo-doma}">Строительство загородного
+                            дома</a>
+                        </li>
+                        <li><a th:href="@{montazh-elektroprovodki-v-dvushke}">Монтаж электропроводки в двушке</a></li>
+                        <li><a th:href="@{ustanovka-dushevoj-kabinyi-portfolio}">Установка душевой кабины</a></li>
+                        <li><a th:href="@{otdelka-sanuzla}">Отделка санузла</a></li>
+                        <li><a th:href="@{uteplenie-i-remont-balkona}">Утепление и ремонт балкона</a></li>
+                        <li><a th:href="@{stroitelstvo-bani}">Строительство бани</a></li>
+                        <li><a th:href="@{kap.-remont-v-novostrojke}">Кап. ремонт в новостройке</a></li>
+                        <li><a th:href="@{zalivka-fundamenta-pod-kottedzh}">Заливка фундамента под коттедж</a></li>
+                        <li><a th:href="@{ustanovka-kovannogo-zabora}">Установка кованного забора</a></li>
+                        <li><a th:href="@{ustanovka-kondiczionera}">Установка кондиционера</a></li>
+                        <li><a th:href="@{nasha-komanda}">Наша команда</a></li>
+                        <li class="last"><a th:href="@{korporativnyij-otdyix-na-prirode-maj-2020}">Корпоративный отдых
+                            на
+                            природе - май 2020</a></li>
+                    </ul>
+                </li>
+                <li><a th:href="@{novosti/index}">Новости</a></li>
+                <li><a th:href="@{prajs}">Прайс</a></li>
+                <li><a th:href="@{otzyivyi}">Отзывы</a></li>
+                <li class="last"><a th:href="@{kontaktyi}">Контакты</a></li>
+            </ul>
+            <div class="cleaner"></div>
+        </div>
+    </div>
+</div>

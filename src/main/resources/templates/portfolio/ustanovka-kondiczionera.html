@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-<title>О компании | Master</title>
+<title>Установка кондиционера | Master</title>
 <base href="">
 <meta name="robots" content="index,follow">
 <meta name="description" content="">
@@ -42,6 +42,7 @@
     
   };
 </script>
+<link rel="stylesheet" href="assets/components/ms2gallery/css/web/default.css" type="text/css" />
 </head>
 <body class="base-template">
     
@@ -54,135 +55,48 @@
 <div class="overlay"></div>
 <div class="mobile-menu">
     <div class="uMenuH">
-        <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li class="uMenuItemA"><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li class="uWithSubmenu"><a href="portfolio/index.html" >Портфолио</a><ul class=""><li class="first"><a href="stroitelstvo-zagorodnogo-doma.html" >Строительство загородного дома</a></li><li><a href="montazh-elektroprovodki-v-dvushke.html" >Монтаж электропроводки в двушке</a></li><li><a href="ustanovka-dushevoj-kabinyi-portfolio.html" >Установка душевой кабины</a></li><li><a href="otdelka-sanuzla.html" >Отделка санузла</a></li><li><a href="uteplenie-i-remont-balkona.html" >Утепление и ремонт балкона</a></li><li><a href="stroitelstvo-bani.html" >Строительство бани</a></li><li><a href="kap.-remont-v-novostrojke.html" >Кап. ремонт в новостройке</a></li><li><a href="zalivka-fundamenta-pod-kottedzh.html" >Заливка фундамента под коттедж</a></li><li><a href="ustanovka-kovannogo-zabora.html" >Установка кованного забора</a></li><li><a href="ustanovka-kondiczionera.html" >Установка кондиционера</a></li><li><a href="nasha-komanda.html" >Наша команда</a></li><li class="last"><a href="korporativnyij-otdyix-na-prirode-maj-2020.html" >Корпоративный отдых на природе - май 2020</a></li></ul></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+        <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li class="uWithSubmenu uMenuItemA"><a href="portfolio/index.html" >Портфолио</a><ul class=""><li class="first"><a href="stroitelstvo-zagorodnogo-doma.html" >Строительство загородного дома</a></li><li><a href="montazh-elektroprovodki-v-dvushke.html" >Монтаж электропроводки в двушке</a></li><li><a href="ustanovka-dushevoj-kabinyi-portfolio.html" >Установка душевой кабины</a></li><li><a href="otdelka-sanuzla.html" >Отделка санузла</a></li><li><a href="uteplenie-i-remont-balkona.html" >Утепление и ремонт балкона</a></li><li><a href="stroitelstvo-bani.html" >Строительство бани</a></li><li><a href="kap.-remont-v-novostrojke.html" >Кап. ремонт в новостройке</a></li><li><a href="zalivka-fundamenta-pod-kottedzh.html" >Заливка фундамента под коттедж</a></li><li><a href="ustanovka-kovannogo-zabora.html" >Установка кованного забора</a></li><li class="uMenuItemA"><a href="ustanovka-kondiczionera.html" >Установка кондиционера</a></li><li><a href="nasha-komanda.html" >Наша команда</a></li><li class="last"><a href="korporativnyij-otdyix-na-prirode-maj-2020.html" >Корпоративный отдых на природе - май 2020</a></li></ul></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
         <div class="cleaner"></div>
     </div>
 </div>
 <div class="main-wrapper">
     <div th:replace="fragments/header :: header"></div>
-        
+    <div class="neighbors hidden-xs hidden-sm"><a class="link-prev tooltip-left-center" href="ustanovka-kovannogo-zabora.html" title="Установка кованного забора"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-left fa-w-8 fa-2x"><path fill="currentColor" d="M231.293 473.899l19.799-19.799c4.686-4.686 4.686-12.284 0-16.971L70.393 256 251.092 74.87c4.686-4.686 4.686-12.284 0-16.971L231.293 38.1c-4.686-4.686-12.284-4.686-16.971 0L4.908 247.515c-4.686 4.686-4.686 12.284 0 16.971L214.322 473.9c4.687 4.686 12.285 4.686 16.971-.001z" class=""></path></svg></a><a class="link-next tooltip-right-center" href="nasha-komanda.html" title="Наша команда"><svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="chevron-right" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512" class="svg-inline--fa fa-chevron-right fa-w-8 fa-2x"><path fill="currentColor" d="M24.707 38.101L4.908 57.899c-4.686 4.686-4.686 12.284 0 16.971L185.607 256 4.908 437.13c-4.686 4.686-4.686 12.284 0 16.971L24.707 473.9c4.686 4.686 12.284 4.686 16.971 0l209.414-209.414c4.686-4.686 4.686-12.284 0-16.971L41.678 38.101c-4.687-4.687-12.285-4.687-16.971 0z" class=""></path></svg></a></div>    
         <section class="middle">
             <div class="push40"></div>
             <div class="container">
                 <ol class="breadcrumb"><li><a href="index.html"><i class="fa fa-home"></i></a></li>
-<li class="breadcrumb-item active">О компании</li></ol>
-                <h1>О компании</h1>
-                <div class="content">
-                    <p><strong>Компания «MASTER»</strong> является одним из лидеров в РФ, предоставляющая своим клиентам широкий спектр бытовых услуг в сфере <span>рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее осмысленного текста рыбы на русском языке</span> с <span>2001</span> года.</p>
-<p><strong>В 2003 году</strong> открыто представительство в г. Москва.</p>
-<p><strong>В 2012 году</strong> <span>рыбатекст является альтернативой традиционному lorem ipsum</span>.</p>
-<p><span><span>При создании генератора мы использовали небезизвестный универсальный код речей. Текст генерируется абзацами случайным образом от двух до десяти предложений в абзаце</span>.</span></p>
-<p>Наша команда профессионалов – главная ценность компании. Высококвалифицированные специалисты <span>практика показывает, что сложившаяся структура организации играет важную роль в формировании модели развития</span>.</p>
-<p><span>Повседневная практика показывает, что сложившаяся структура организации играет важную роль в формировании модели развития. <span>Задача организации, в особенности же дальнейшее развитие различных форм деятельности играет важную роль в формировании модели развития.</span></span></p>
-<p>С нами безопасно и надежно!</p>
+<li class="breadcrumb-item"><a href="portfolio/index.html">Портфолио</a></li>
+<li class="breadcrumb-item active">Установка кондиционера</li></ol>
+                <h1>Установка кондиционера</h1>
+                
+                <div class="con_job">
+                    <div class="back_to_subcat">
+                        <a href="portfolio/index.html">
+                            <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="long-arrow-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-long-arrow-left fa-w-14 fa-2x"><path fill="currentColor" d="M136.97 380.485l7.071-7.07c4.686-4.686 4.686-12.284 0-16.971L60.113 273H436c6.627 0 12-5.373 12-12v-10c0-6.627-5.373-12-12-12H60.113l83.928-83.444c4.686-4.686 4.686-12.284 0-16.971l-7.071-7.07c-4.686-4.686-12.284-4.686-16.97 0l-116.485 116c-4.686 4.686-4.686 12.284 0 16.971l116.485 116c4.686 4.686 12.284 4.686 16.97-.001z" class=""></path></svg>
+                            <span>В общий раздел</span>
+                        </a>
+                    </div>
                 </div>
                 
                 
-
-
-    <div class="push20"></div>
-    <div class="gallery">
-        <div class="row">
-            
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/5605af43132ffaffcc36fc1d035e2b9d_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/5605af43132ffaffcc36fc1d035e2b9d_747x550_5a0.jpg" alt="Описание изображения 1">
-        </a>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/biznes-kompanii-1_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/biznes-kompanii-1_747x550_5a0.jpg" alt="Описание изображения 2">
-        </a>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/gettyimages-164852259_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/gettyimages-164852259_747x550_5a0.jpg" alt="">
-        </a>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/ky-su-giam-sat-co-dien-lanh_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/ky-su-giam-sat-co-dien-lanh_747x550_5a0.jpg" alt="">
-        </a>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/lh1_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/lh1_747x550_5a0.jpg" alt="">
-        </a>
-    </div>
-</div>
-
-<div class="col-sm-12 col-md-8">
-    <div class="element">
-        <a class="fancybox" href="assets/cache_image/images/about_company/photodune-5445304-group-of-construction-workers-m_1500x1100_19c.jpg" data-fancybox-group="gallery">
-            <img src="assets/cache_image/images/about_company/photodune-5445304-group-of-construction-workers-m_747x550_5a0.jpg" alt="">
-        </a>
-    </div>
-</div>
-
+                
+                <div class="gallery portfolio-gallery">
+    <div class="row">
+                <div class="col-xs-8 col-md-6">
+            <div class="element">
+                <a class="fancybox" href="assets/images/resources/54/281287053.jpg" data-fancybox-group="gallery">
+                    <img src="assets/images/resources/54/small/281287053.jpg" alt="">
+                </a>
+            </div>
         </div>
-    </div>
+            </div>
+</div>
 
+                
                 
             </div>
             <div class="push60"></div>
-        </section>
-        
-        <section class="feedback-section">
-            <div class="container">
-                <div class="feedback-form text-center rf">
-                    <div class="title-h1">Свяжитесь с нами</div>
-                    <form method="post" class="ajax_form">
-    <input type="hidden" name="urlinput" value="https://master.sboxdemo.ru/o-kompanii.html">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="form-group">
-                <input type="text" name="fio" value="" class="form-control required" placeholder="Ваше имя *" />
-            </div>
-        </div>
-        <div class="col-sm-12">
-            <div class="form-group">
-                <input type="email" name="usermail" value="" class="form-control required" placeholder="Ваш email *" />
-            </div>
-        </div>
-    </div>
-    <div class="form-group">
-        <textarea name="message" class="form-control message required" placeholder="Сообщение *"></textarea>
-    </div>
-    <div class="agreement form-group">
-        <input type="checkbox" name="agreement" id="agreementfeedback" class="required">
-        <label for="agreementfeedback">
-            Даю согласие на обработку персональных данных *
-        </label>
-    </div>
-    <center>
-        <div class="form-item">
-    	    <div id="recaptcha3"></div>
-    	    
-    	    <span class="error_g-recaptcha-response error"></span>
-    	</div>
-	</center>
-	<div class="push40"></div>
-    <div>
-        <input name="feedbackbtn" type="submit" class="btn block" value="Отправить" />
-    </div>
-
-	<input type="hidden" name="af_action" value="be26d5a1464145b0e941089703ec81cb" />
-</form>
-                </div>
-            </div>
         </section>
         
         <div class="footer-push"></div>
@@ -217,7 +131,7 @@
                     <div class="col-sm-8 col-lg-6">
                         <div class="footer-menu">
                             <div class="title">Меню</div>
-                            <ul class=""><li class="first active"><a href="o-kompanii.html" >О компании</a></li><li><a href="uslugi/index.html" >Услуги</a></li><li><a href="portfolio/index.html" >Портфолио</a></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+                            <ul class=""><li class="first"><a href="o-kompanii.html" >О компании</a></li><li><a href="uslugi/index.html" >Услуги</a></li><li class="active"><a href="portfolio/index.html" >Портфолио</a></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
                         </div>
                     </div>
                     <div class="col-sm-8">
@@ -302,7 +216,7 @@
     <div class="rf">
         <form method="post" class="ajax_form">
     <input type="hidden" class="themeinput" name="themeinput">
-    <input type="hidden" name="urlinput" value="https://master.sboxdemo.ru/o-kompanii.html">
+    <input type="hidden" name="urlinput" value="https://master.sboxdemo.ru/ustanovka-kondiczionera.html">
     <div class="row">
         <div class="col-sm-24">
             <div class="form-group">
@@ -404,7 +318,9 @@
 
 
 
+<script type="text/javascript">ms2GalleryConfig={"cssUrl":"\/assets\/components\/ms2gallery\/css\/web\/","jsUrl":"\/assets\/components\/ms2gallery\/js\/web\/"};</script>
+<script type="text/javascript" src="assets/components/ms2gallery/js/web/default.js"></script>
 <script type="text/javascript" src="assets/components/ajaxform/js/default.js"></script>
-<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":6});</script>
+<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":54});</script>
 </body>
 </html>

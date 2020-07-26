@@ -1,0 +1,203 @@
+<div xmlns:th="http://www.thymeleaf.org" th:fragment="header" class="header">
+    <div class="header-top">
+        <div class="container">
+            <div class="relative">
+                <div class="slogan upper">Быстрое решение бытовых задач</div>
+            </div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="relative">
+                <div class="logo upper">
+                    <a th:href="@{/}">Мастер<span>на все руки</span></a>
+                    <div>ИП Иванов С.М.</div>
+                </div>
+                <div class="header-tel relative">
+                    <i class="fa fa-phone"></i>
+                    <div class="element">
+                        <a href="tel:896100001100">8 (9610) 000-11-00</a>
+                    </div>
+                    <div class="push5 visible-xs"></div>
+                    <div class="element">
+                        <a href="tel:896100002200">8 (9610) 000-22-00</a>
+                    </div>
+                    <div class="push20 visible-xs visible-sm"></div>
+                </div>
+                <div class="header-btn-wrapper">
+                    <a th:href="@{#callback}" class="btn fancybox" data-theme="Заказ обратного звонка">
+                        Заказать обратный звонок
+                    </a>
+                </div>
+                <div class="slogan2 text-right kelson black">
+                    Работаем<br/><span>БЕЗ ВЫХОДНЫХ</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="top-menu-wrapper-push"></div>
+    <div class="top-menu-wrapper">
+        <div class="inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-24 col-md-18 col-lg-17">
+                        <div class="uMenuH">
+                            <ul class="">
+                                <li class="first uMenuItemA">
+                                    <a th:href="@{/}">
+                                        Главная
+                                    </a>
+                                </li>
+                                <li>
+                                    <a th:href="@{/o-kompanii}">
+                                        О компании
+                                    </a>
+                                </li>
+                                <li class="uWithSubmenu">
+                                    <a th:href="@{/uslugi}">
+                                        Услуги
+                                    </a>
+                                    <ul class="">
+                                        <li class="first uWithSubmenu">
+                                            <a th:href="@{/uslugi-elektrika}">Услуги электрика</a>
+                                            <ul class="">
+                                                <li class="first">
+                                                    <a th:href="@{/ustanovka-schetchika}">Установка счетчика</a>
+                                                </li>
+                                                <li class="last">
+                                                    <a th:href="@{/ustanovka-elektro-shhitka}">Установка
+                                                        электро-щитка</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="uWithSubmenu"><a th:href="@{/uslugi-santexnika}">
+                                            Услуги сантехника</a>
+                                            <ul class="">
+                                                <li class="first">
+                                                    <a th:href="@{/ustanovka-dushevoj-kabinyi}">
+                                                        Установка душевой кабины
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/ustanovka-smesitelya}">
+                                                        Установка смесителя
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a th:href="@{/ustanovka-stiralnoj-mashinyi}">
+                                                        Установка стиральной машины
+                                                    </a>
+                                                </li>
+                                                <li class="last">
+                                                    <a th:href="@{/ustanovka-rakovinyi}">
+                                                        Установка раковины
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/ustanovka-i-obsluzhivanie-plastikovyix-okon}">
+                                                Установка и обслуживание пластиковых окон
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/montazh-natyazhnyix-potolkov}">
+                                                Монтаж натяжных потолков
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/sborka-mebeli}">
+                                                Сборка мебели
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/ustanovka-i-obsluzhivanie-kondiczionerov}">
+                                                Установка и обслуживание кондиционеров
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/ustanovka-vyityazhek}">
+                                                Установка вытяжек
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/ustanovka-dverej}">
+                                                Установка дверей
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/montazh-sistem-videonablyudeniya}">
+                                                Монтаж систем видеонаблюдения
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij}">
+                                                Монтаж, обслуживание пожарных систем, сигнализаций
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a th:href="@{/uslugi-raznorabochix-montazhnikov-gruzchikov}">
+                                                Услуги разнорабочих, монтажников, грузчиков
+                                            </a>
+                                        </li>
+                                        <li class="last">
+                                            <a th:href="@{/uborka-pomeshhenij}">
+                                                Уборка помещений
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a th:href="@{/portfolio}">
+                                        Портфолио
+                                    </a>
+                                </li>
+                                <li>
+                                    <a th:href="@{/novosti}">
+                                        Новости
+                                    </a>
+                                </li>
+                                <li>
+                                    <a th:href="@{/prajs}">
+                                        Прайс
+                                    </a>
+                                </li>
+                                <li>
+                                    <a th:href="@{/otzyivyi}">
+                                        Отзывы
+                                    </a>
+                                </li>
+                                <li class="last">
+                                    <a th:href="@{/kontaktyi}">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="cleaner"></div>
+                        </div>
+                    </div>
+                    <div class="col-xs-24 col-md-6 col-lg-7">
+                        <div class="search-box-wrapper">
+                            <div class="search-btn">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <div class="search_box">
+                                <form method="get" action="https://master.sboxdemo.ru/rezultatyi-poiska}">
+                                    <div class="form-group relative">
+                                        <div class="schQuery">
+                                            <input type="text" name="query" class="queryField"
+                                                   placeholder="Поиск по сайту" autocomplete="off">
+                                        </div>
+                                        <div class="schBtn">
+                                            <input type="submit" class="searchSbmFl" value="Найти"/>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

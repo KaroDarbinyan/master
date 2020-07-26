@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
 <title>Контакты | Master</title>
@@ -51,98 +52,9 @@
     <span class="line3"></span>
 </a>
 <div class="overlay"></div>
-<div class="mobile-menu">
-    <div class="uMenuH">
-        <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li class="uWithSubmenu"><a href="portfolio/index.html" >Портфолио</a><ul class=""><li class="first"><a href="stroitelstvo-zagorodnogo-doma.html" >Строительство загородного дома</a></li><li><a href="montazh-elektroprovodki-v-dvushke.html" >Монтаж электропроводки в двушке</a></li><li><a href="ustanovka-dushevoj-kabinyi-portfolio.html" >Установка душевой кабины</a></li><li><a href="otdelka-sanuzla.html" >Отделка санузла</a></li><li><a href="uteplenie-i-remont-balkona.html" >Утепление и ремонт балкона</a></li><li><a href="stroitelstvo-bani.html" >Строительство бани</a></li><li><a href="kap.-remont-v-novostrojke.html" >Кап. ремонт в новостройке</a></li><li><a href="zalivka-fundamenta-pod-kottedzh.html" >Заливка фундамента под коттедж</a></li><li><a href="ustanovka-kovannogo-zabora.html" >Установка кованного забора</a></li><li><a href="ustanovka-kondiczionera.html" >Установка кондиционера</a></li><li><a href="nasha-komanda.html" >Наша команда</a></li><li class="last"><a href="korporativnyij-otdyix-na-prirode-maj-2020.html" >Корпоративный отдых на природе - май 2020</a></li></ul></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last uMenuItemA"><a href="kontaktyi.html" >Контакты</a></li></ul>
-        <div class="cleaner"></div>
-    </div>
-</div>
+<div th:replace="fragments/mobile-menu :: mobile-menu"></div>
 <div class="main-wrapper">
-    <div class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="relative">
-                    
-                    <div class="slogan upper">Быстрое решение бытовых задач</div>
-                    
-                </div>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="relative">
-                    
-                    
-                    
-                        
-                        <div class="logo upper">
-                            <a href="index.html">Мастер <span>на все руки</span></a>
-                            
-                            <div>ИП Иванов С.М.</div>
-                            
-                        </div>
-                        
-                    
-                    
-                    
-                    <div class="header-tel relative">
-                        <i class="fa fa-phone"></i> 
-                        <div class="element">
-                            <a href="tel:896100001100">8 (9610) 000-11-00</a> 
-                        </div>
-                        
-                        <div class="push5 visible-xs"></div>
-                        <div class="element">
-                            <a href="tel:896100002200">8 (9610) 000-22-00</a>
-                        </div>
-                        
-                        <div class="push20 visible-xs visible-sm"></div>
-                    </div>
-                    
-                    
-                    <div class="header-btn-wrapper">
-                        <a href="index.html#callback" class="btn fancybox" data-theme="Заказ обратного звонка">Заказать обратный звонок</a>
-                    </div>
-                    <div class="slogan2 text-right kelson black">
-                        Работаем<br />
-                        <span>БЕЗ ВЫХОДНЫХ</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="top-menu-wrapper-push"></div>
-        <div class="top-menu-wrapper">
-            <div class="inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-24 col-md-18 col-lg-17">
-                            <div class="uMenuH">
-                                <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li><a href="portfolio/index.html" >Портфолио</a></li><li><a href="novosti/index.html" >Новости</a></li><li><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last uMenuItemA"><a href="kontaktyi.html" >Контакты</a></li></ul>
-                                <div class="cleaner"></div>
-                            </div>
-                        </div>
-                        <div class="col-xs-24 col-md-6 col-lg-7">
-                            <div class="search-box-wrapper">
-                                <div class="search-btn"><i class="fa fa-search"></i></div>
-                                <div class="search_box">
-                                    <form method="get" action="https://master.sboxdemo.ru/rezultatyi-poiska.html">
-                                        <div class="form-group relative">
-                                            <div class="schQuery">
-                                                <input type="text" name="query" class="queryField" placeholder="Поиск по сайту" autocomplete="off">
-                                            </div>
-                                            <div class="schBtn">
-                                                <input type="submit" class="searchSbmFl" value="Найти" />
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div th:replace="fragments/header :: header"></div>
         
         <section class="middle">
             <div class="push40"></div>
@@ -483,13 +395,7 @@ mapexMap.geoObjects.add(myPlacemark);
 </script>
 
 
-<div style="background:#fff; padding:12px 0; color:#23282E; font: normal normal 14px Arial; box-shadow:0 -3px 6px rgba(0,0,0,0.3); position:fixed; width:100%; z-index:500; bottom:0; left:0;text-align:center;">
-    <div style="width:1000px;max-width:100%;margin:auto;padding:0 15px;">
-        <div class="text-center">
-            <a class="collary-btn" href="http://collary.ru/shablon-sajta-master-na-vse-ruki-na-modx.html" target="_blank" style="display:inline-block;text-decoration: none;color: #fff;background: #E9770D;font-size: 13px;text-transform: uppercase;padding: 16px 45px;cursor: pointer;border: none;border-radius: 5px;">Хочу такой сайт</a>
-        </div>
-    </div>
-</div>
+
 <script type="text/javascript" src="assets/components/ajaxform/js/default.js"></script>
 <script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":11});</script>
 </body>

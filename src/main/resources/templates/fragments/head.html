@@ -1,0 +1,42 @@
+<head xmlns:th="http://www.thymeleaf.org" th:fragment="head (title)">
+    <meta charset="utf-8">
+    <title th:text="${title}"></title>
+    <base href="">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0 maximum-scale=1.0, user-scalable=0" name="viewport" >
+    <link rel="shortcut icon" type="image/x-icon" href="/images/site/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="/assets/template/css/bootstrap24.css" rel="stylesheet">
+    <link href="/assets/template/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="/assets/template/css/font-awesome.css" rel="stylesheet">
+    <link href="/assets/template/css/style.css" rel="stylesheet">
+    <script src="/assets/template/js/jquery-3.2.1.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit"></script>
+    <script>
+        var recaptcha1, recaptcha2;
+        var myCallBack = function() {
+            if($('#recaptcha1').length > 0){
+                recaptcha1 = grecaptcha.render('recaptcha1', {
+                    'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+            if($('#recaptcha2').length > 0){
+                recaptcha2 = grecaptcha.render('recaptcha2', {
+                    'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+            if($('#recaptcha3').length > 0){
+                recaptcha3 = grecaptcha.render('recaptcha3', {
+                    'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+        };
+    </script>
+</head>

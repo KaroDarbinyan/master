@@ -1,49 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="utf-8">
-<title>Прайс на все виды услуг | Master</title>
-<base href="">
-<meta name="robots" content="index,follow">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="SKYPE_TOOLBAR" content ="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta content="width=device-width,initial-scale=1.0 maximum-scale=1.0, user-scalable=0" name="viewport" >
-<link rel="shortcut icon" type="image/x-icon" href="images/site/favicon.ico" />
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
-<link href="assets/template/css/bootstrap24.css" rel="stylesheet">
-<link href="assets/template/css/jquery.fancybox.css" rel="stylesheet">
-<link href="assets/template/css/font-awesome.css" rel="stylesheet">
-<link href="assets/template/css/style.css" rel="stylesheet">
-<script src='assets/template/js/jquery-3.2.1.min.js'></script>
-<script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit"></script>
-<script>
-  var recaptcha1, recaptcha2;
-  var myCallBack = function() {
-    if($('#recaptcha1').length > 0){
-        recaptcha1 = grecaptcha.render('recaptcha1', {
-          'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
-        });
-    }
-    
-    if($('#recaptcha2').length > 0){
-        recaptcha2 = grecaptcha.render('recaptcha2', {
-          'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
-        });
-    }
-    
-    if($('#recaptcha3').length > 0){
-        recaptcha3 = grecaptcha.render('recaptcha3', {
-          'sitekey' : '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
-        });
-    }
-    
-  };
-</script>
+    <title>Прайс на все виды услуг | Master</title>
+    <base href="">
+    <meta name="robots" content="index,follow">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width,initial-scale=1.0 maximum-scale=1.0, user-scalable=0" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="images/site/favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <link href="assets/template/css/bootstrap24.css" rel="stylesheet">
+    <link href="assets/template/css/jquery.fancybox.css" rel="stylesheet">
+    <link href="assets/template/css/font-awesome.css" rel="stylesheet">
+    <link href="assets/template/css/style.css" rel="stylesheet">
+    <script src='assets/template/js/jquery-3.2.1.min.js'></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=myCallBack&render=explicit"></script>
+    <script>
+        var recaptcha1, recaptcha2;
+        var myCallBack = function () {
+            if ($('#recaptcha1').length > 0) {
+                recaptcha1 = grecaptcha.render('recaptcha1', {
+                    'sitekey': '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+            if ($('#recaptcha2').length > 0) {
+                recaptcha2 = grecaptcha.render('recaptcha2', {
+                    'sitekey': '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+            if ($('#recaptcha3').length > 0) {
+                recaptcha3 = grecaptcha.render('recaptcha3', {
+                    'sitekey': '6LesB-EUAAAAAIe1ocOP9FgshR_kewchIqvScyiu'
+                });
+            }
+
+        };
+    </script>
 </head>
 <body class="base-template">
-    
+
 
 <a href="index.html#" class="menu-btn">
     <span class="line1"></span>
@@ -53,225 +55,316 @@
 <div class="overlay"></div>
 <div class="mobile-menu">
     <div class="uMenuH">
-        <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li class="uWithSubmenu"><a href="portfolio/index.html" >Портфолио</a><ul class=""><li class="first"><a href="stroitelstvo-zagorodnogo-doma.html" >Строительство загородного дома</a></li><li><a href="montazh-elektroprovodki-v-dvushke.html" >Монтаж электропроводки в двушке</a></li><li><a href="ustanovka-dushevoj-kabinyi-portfolio.html" >Установка душевой кабины</a></li><li><a href="otdelka-sanuzla.html" >Отделка санузла</a></li><li><a href="uteplenie-i-remont-balkona.html" >Утепление и ремонт балкона</a></li><li><a href="stroitelstvo-bani.html" >Строительство бани</a></li><li><a href="kap.-remont-v-novostrojke.html" >Кап. ремонт в новостройке</a></li><li><a href="zalivka-fundamenta-pod-kottedzh.html" >Заливка фундамента под коттедж</a></li><li><a href="ustanovka-kovannogo-zabora.html" >Установка кованного забора</a></li><li><a href="ustanovka-kondiczionera.html" >Установка кондиционера</a></li><li><a href="nasha-komanda.html" >Наша команда</a></li><li class="last"><a href="korporativnyij-otdyix-na-prirode-maj-2020.html" >Корпоративный отдых на природе - май 2020</a></li></ul></li><li><a href="novosti/index.html" >Новости</a></li><li class="uMenuItemA"><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+        <ul class="">
+            <li class="first"><a href="index.html">Главная</a></li>
+            <li><a href="o-kompanii.html">О компании</a></li>
+            <li class="uWithSubmenu"><a href="uslugi/index.html">Услуги</a>
+                <ul class="">
+                    <li class="first uWithSubmenu"><a href="uslugi-elektrika.html">Услуги электрика</a>
+                        <ul class="">
+                            <li class="first"><a href="ustanovka-schetchika.html">Установка счетчика</a></li>
+                            <li class="last"><a href="ustanovka-elektro-shhitka.html">Установка электро-щитка</a></li>
+                        </ul>
+                    </li>
+                    <li class="uWithSubmenu"><a href="uslugi-santexnika.html">Услуги сантехника</a>
+                        <ul class="">
+                            <li class="first"><a href="ustanovka-dushevoj-kabinyi.html">Установка душевой кабины</a>
+                            </li>
+                            <li><a href="ustanovka-smesitelya.html">Установка смесителя</a></li>
+                            <li><a href="ustanovka-stiralnoj-mashinyi.html">Установка стиральной машины</a></li>
+                            <li class="last"><a href="ustanovka-rakovinyi.html">Установка раковины</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html">Установка и обслуживание пластиковых
+                        окон</a></li>
+                    <li><a href="montazh-natyazhnyix-potolkov.html">Монтаж натяжных потолков</a></li>
+                    <li><a href="sborka-mebeli.html">Сборка мебели</a></li>
+                    <li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html">Установка и обслуживание
+                        кондиционеров</a></li>
+                    <li><a href="ustanovka-vyityazhek.html">Установка вытяжек</a></li>
+                    <li><a href="ustanovka-dverej.html">Установка дверей</a></li>
+                    <li><a href="montazh-sistem-videonablyudeniya.html">Монтаж систем видеонаблюдения</a></li>
+                    <li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html">Монтаж, обслуживание
+                        пожарных систем, сигнализаций</a></li>
+                    <li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html">Услуги разнорабочих, монтажников,
+                        грузчиков</a></li>
+                    <li class="last"><a href="uborka-pomeshhenij.html">Уборка помещений</a></li>
+                </ul>
+            </li>
+            <li class="uWithSubmenu"><a href="portfolio/index.html">Портфолио</a>
+                <ul class="">
+                    <li class="first"><a href="stroitelstvo-zagorodnogo-doma.html">Строительство загородного дома</a>
+                    </li>
+                    <li><a href="montazh-elektroprovodki-v-dvushke.html">Монтаж электропроводки в двушке</a></li>
+                    <li><a href="ustanovka-dushevoj-kabinyi-portfolio.html">Установка душевой кабины</a></li>
+                    <li><a href="otdelka-sanuzla.html">Отделка санузла</a></li>
+                    <li><a href="uteplenie-i-remont-balkona.html">Утепление и ремонт балкона</a></li>
+                    <li><a href="stroitelstvo-bani.html">Строительство бани</a></li>
+                    <li><a href="kap.-remont-v-novostrojke.html">Кап. ремонт в новостройке</a></li>
+                    <li><a href="zalivka-fundamenta-pod-kottedzh.html">Заливка фундамента под коттедж</a></li>
+                    <li><a href="ustanovka-kovannogo-zabora.html">Установка кованного забора</a></li>
+                    <li><a href="ustanovka-kondiczionera.html">Установка кондиционера</a></li>
+                    <li><a href="nasha-komanda.html">Наша команда</a></li>
+                    <li class="last"><a href="korporativnyij-otdyix-na-prirode-maj-2020.html">Корпоративный отдых на
+                        природе - май 2020</a></li>
+                </ul>
+            </li>
+            <li><a href="novosti/index.html">Новости</a></li>
+            <li class="uMenuItemA"><a href="prajs.html">Прайс</a></li>
+            <li><a href="otzyivyi.html">Отзывы</a></li>
+            <li class="last"><a href="kontaktyi.html">Контакты</a></li>
+        </ul>
         <div class="cleaner"></div>
     </div>
 </div>
 <div class="main-wrapper">
-    <div class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="relative">
-                    
-                    <div class="slogan upper">Быстрое решение бытовых задач</div>
-                    
-                </div>
+    <div th:replace="fragments/header :: header"></div>
+
+    <section class="middle">
+        <div class="push40"></div>
+        <div class="container">
+            <ol class="breadcrumb">
+                <li><a href="index.html"><i class="fa fa-home"></i></a></li>
+                <li class="breadcrumb-item active">Прайс</li>
+            </ol>
+            <h1>Прайс на все виды услуг</h1>
+
+
+            <div class="content">
+                <p>Данный прайс формируется динамически, на основе заполненных таблиц с ценами каждой конкретной услуги
+                    из раздела услуг. Поэтому дополнительно дублировать заполнение цен не придется. Если таблица с
+                    ценами на странице услуг не заполнена, то здесь соответственно ничего выводиться не будет. На данный
+                    момент заполнены цены для услуг электрика и сантехника, поэтому здесь выведено 2 таблицы. Над
+                    таблицами сделано динамическое якорное меню, чтобы можно было быстро проскроллить к интересующей
+                    таблице. </p>
             </div>
+            <div class="push20"></div>
+
+
+            <ul class="price-anchor-menu">
+
+
+                <li>
+                    <a href="index.html#element_12" class="scrollto btn">
+                        Услуги электрика
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                             class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x">
+                            <path fill="currentColor"
+                                  d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z"
+                                  class=""></path>
+                        </svg>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="index.html#element_13" class="scrollto btn">
+                        Услуги сантехника
+                        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img"
+                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"
+                             class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x">
+                            <path fill="currentColor"
+                                  d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z"
+                                  class=""></path>
+                        </svg>
+                    </a>
+                </li>
+
+
+            </ul>
+            <div class="price-tables-list">
+
+
+                <div class="element" id="element_12">
+                    <h3 class="element-title">
+                        Услуги электрика
+                    </h3>
+                    <div class="element-table">
+                        <table class="tvtable">
+                            <tbody>
+                            <tr>
+                                <th>Наименование услуги</th>
+                                <th>Цена</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Аварийные работы</strong></td>
+                                <td>от 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Устранение короткого замыкания и ремонт электропроводки</td>
+                                <td>140 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Ремонт розетки</td>
+                                <td>от 500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Погасла люстра</td>
+                                <td>от 150 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Не работает выключатель</td>
+                                <td>от 400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Галогеновый светильник</td>
+                                <td>от 230 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Блок выключателей</td>
+                                <td>от 450 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Замена лампы</td>
+                                <td>50 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Ремонт распределительной коробки</td>
+                                <td>от 700 ₽</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Установка и подключение светильников</strong></td>
+                                <td>от 1200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Сборка, установка люстры (демонтаж предыдущей)</td>
+                                <td>от 1000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Люстра с пультом</td>
+                                <td>от 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Люстра с подвесными элементами (до 20 шт.)</td>
+                                <td>130 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Точечный светильник</td>
+                                <td>350 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Светильник настенный</td>
+                                <td>650 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Светильник потолочный</td>
+                                <td>350 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка бра</td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Мебельный светильник</td>
+                                <td>200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Светильник</td>
+                                <td>250 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Галогеновая люстра</td>
+                                <td>680 ₽</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="element" id="element_13">
+                    <h3 class="element-title">
+                        Услуги сантехника
+                    </h3>
+                    <div class="element-table">
+                        <table class="tvtable">
+                            <tbody>
+                            <tr>
+                                <th>Наименование работ</th>
+                                <th>Стоимость</th>
+                            </tr>
+                            <tr>
+                                <td><strong>Установка и подключение сантехнических приборов</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Ванна (чугун, сталь)</td>
+                                <td>от 1400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка смесителя</td>
+                                <td>900 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка раковины, мойки</td>
+                                <td>от 1200 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка унитаза напольного</td>
+                                <td>от 1450 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка душ кабинки</td>
+                                <td>4000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка посудомоечной машинки</td>
+                                <td>от 900 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка и подключение стиральной машины</td>
+                                <td>от 1000 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Установка водонагревателя от 80 л.</td>
+                                <td>от 1500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Ремонт сантехники</strong></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td>Ремонт смесителя (течь)</td>
+                                <td>от 700 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Запорная арматура бачка унитаза (течь)</td>
+                                <td>от 800 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Замена прокладки в смесителе</td>
+                                <td>от 400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Замена картриджа тонкой очистки</td>
+                                <td>400 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Замена шланга и душевой лейки</td>
+                                <td>500 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Устранение течи водопроводных труб</td>
+                                <td>от 900 ₽</td>
+                            </tr>
+                            <tr>
+                                <td>Течь труб канализации</td>
+                                <td>от 700 ₽</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+
+            </div>
+
         </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="relative">
-                    
-                    
-                    
-                        
-                        <div class="logo upper">
-                            <a href="index.html">Мастер <span>на все руки</span></a>
-                            
-                            <div>ИП Иванов С.М.</div>
-                            
-                        </div>
-                        
-                    
-                    
-                    
-                    <div class="header-tel relative">
-                        <i class="fa fa-phone"></i> 
-                        <div class="element">
-                            <a href="tel:896100001100">8 (9610) 000-11-00</a> 
-                        </div>
-                        
-                        <div class="push5 visible-xs"></div>
-                        <div class="element">
-                            <a href="tel:896100002200">8 (9610) 000-22-00</a>
-                        </div>
-                        
-                        <div class="push20 visible-xs visible-sm"></div>
-                    </div>
-                    
-                    
-                    <div class="header-btn-wrapper">
-                        <a href="index.html#callback" class="btn fancybox" data-theme="Заказ обратного звонка">Заказать обратный звонок</a>
-                    </div>
-                    <div class="slogan2 text-right kelson black">
-                        Работаем<br />
-                        <span>БЕЗ ВЫХОДНЫХ</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="top-menu-wrapper-push"></div>
-        <div class="top-menu-wrapper">
-            <div class="inner">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-24 col-md-18 col-lg-17">
-                            <div class="uMenuH">
-                                <ul class=""><li class="first"><a href="index.html" >Главная</a></li><li><a href="o-kompanii.html" >О компании</a></li><li class="uWithSubmenu"><a href="uslugi/index.html" >Услуги</a><ul class=""><li class="first uWithSubmenu"><a href="uslugi-elektrika.html" >Услуги электрика</a><ul class=""><li class="first"><a href="ustanovka-schetchika.html" >Установка счетчика</a></li><li class="last"><a href="ustanovka-elektro-shhitka.html" >Установка электро-щитка</a></li></ul></li><li class="uWithSubmenu"><a href="uslugi-santexnika.html" >Услуги сантехника</a><ul class=""><li class="first"><a href="ustanovka-dushevoj-kabinyi.html" >Установка душевой кабины</a></li><li><a href="ustanovka-smesitelya.html" >Установка смесителя</a></li><li><a href="ustanovka-stiralnoj-mashinyi.html" >Установка стиральной машины</a></li><li class="last"><a href="ustanovka-rakovinyi.html" >Установка раковины</a></li></ul></li><li><a href="ustanovka-i-obsluzhivanie-plastikovyix-okon.html" >Установка и обслуживание пластиковых окон</a></li><li><a href="montazh-natyazhnyix-potolkov.html" >Монтаж натяжных потолков</a></li><li><a href="sborka-mebeli.html" >Сборка мебели</a></li><li><a href="ustanovka-i-obsluzhivanie-kondiczionerov.html" >Установка и обслуживание кондиционеров</a></li><li><a href="ustanovka-vyityazhek.html" >Установка вытяжек</a></li><li><a href="ustanovka-dverej.html" >Установка дверей</a></li><li><a href="montazh-sistem-videonablyudeniya.html" >Монтаж систем видеонаблюдения</a></li><li><a href="montazh-obsluzhivanie-pozharnyix-sistem-signalizaczij.html" >Монтаж, обслуживание пожарных систем, сигнализаций</a></li><li><a href="uslugi-raznorabochix-montazhnikov-gruzchikov.html" >Услуги разнорабочих, монтажников, грузчиков</a></li><li class="last"><a href="uborka-pomeshhenij.html" >Уборка помещений</a></li></ul></li><li><a href="portfolio/index.html" >Портфолио</a></li><li><a href="novosti/index.html" >Новости</a></li><li class="uMenuItemA"><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
-                                <div class="cleaner"></div>
-                            </div>
-                        </div>
-                        <div class="col-xs-24 col-md-6 col-lg-7">
-                            <div class="search-box-wrapper">
-                                <div class="search-btn"><i class="fa fa-search"></i></div>
-                                <div class="search_box">
-                                    <form method="get" action="https://master.sboxdemo.ru/rezultatyi-poiska.html">
-                                        <div class="form-group relative">
-                                            <div class="schQuery">
-                                                <input type="text" name="query" class="queryField" placeholder="Поиск по сайту" autocomplete="off">
-                                            </div>
-                                            <div class="schBtn">
-                                                <input type="submit" class="searchSbmFl" value="Найти" />
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-        
-        <section class="middle">
-            <div class="push40"></div>
-            <div class="container">
-                <ol class="breadcrumb"><li><a href="index.html"><i class="fa fa-home"></i></a></li>
-<li class="breadcrumb-item active">Прайс</li></ol>
-                <h1>Прайс на все виды услуг</h1>
-                
-                
-                <div class="content">
-                    <p>Данный прайс формируется динамически, на основе заполненных таблиц с ценами каждой конкретной услуги из раздела услуг. Поэтому дополнительно дублировать заполнение цен не придется. Если таблица с ценами на странице услуг не заполнена, то здесь соответственно ничего выводиться не будет. На данный момент заполнены цены для услуг электрика и сантехника, поэтому здесь выведено 2 таблицы. Над таблицами сделано динамическое якорное меню, чтобы можно было быстро проскроллить к интересующей таблице. </p>
-                </div>
-                <div class="push20"></div>
-                
-                
-                <ul class="price-anchor-menu">
-                    
+        <div class="push30"></div>
+    </section>
 
-<li>
-    <a href="index.html#element_12" class="scrollto btn">
-        Услуги электрика
-        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x"><path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path></svg>
-    </a>
-</li>
-
-
-
-
-
-
-
-<li>
-    <a href="index.html#element_13" class="scrollto btn">
-        Услуги сантехника
-        <svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="arrow-down" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-arrow-down fa-w-14 fa-2x"><path fill="currentColor" d="M443.5 248.5l-7.1-7.1c-4.7-4.7-12.3-4.7-17 0L241 419.9V44c0-6.6-5.4-12-12-12h-10c-6.6 0-12 5.4-12 12v375.9L28.5 241.4c-4.7-4.7-12.3-4.7-17 0l-7.1 7.1c-4.7 4.7-4.7 12.3 0 17l211 211.1c4.7 4.7 12.3 4.7 17 0l211-211.1c4.8-4.8 4.8-12.3.1-17z" class=""></path></svg>
-    </a>
-</li>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </ul>
-                <div class="price-tables-list">
-                    
-
-<div class="element" id="element_12">
-    <h3 class="element-title">
-        Услуги электрика
-    </h3>
-    <div class="element-table">
-        <table class="tvtable"><tbody><tr><th>Наименование услуги</th><th>Цена</th></tr><tr><td><strong>Аварийные работы</strong></td><td>от 800 ₽</td></tr><tr><td>Устранение короткого замыкания и ремонт электропроводки</td><td>140 ₽</td></tr><tr><td>Ремонт розетки</td><td>от 500 ₽</td></tr><tr><td>Погасла люстра</td><td>от 150 ₽</td></tr><tr><td>Не работает выключатель</td><td>от 400 ₽</td></tr><tr><td>Галогеновый светильник</td><td>от 230 ₽</td></tr><tr><td>Блок выключателей</td><td>от 450 ₽</td></tr><tr><td>Замена лампы</td><td>50 ₽</td></tr><tr><td>Ремонт распределительной коробки</td><td>от 700 ₽</td></tr><tr><td><strong>Установка и подключение светильников</strong></td><td>от 1200 ₽</td></tr><tr><td>Сборка, установка люстры (демонтаж предыдущей)</td><td>от 1000 ₽</td></tr><tr><td>Люстра с пультом</td><td>от 800 ₽</td></tr><tr><td>Люстра с подвесными элементами (до 20 шт.)</td><td>130 ₽</td></tr><tr><td>Точечный светильник</td><td>350 ₽</td></tr><tr><td>Светильник настенный</td><td>650 ₽</td></tr><tr><td>Светильник потолочный</td><td>350 ₽</td></tr><tr><td>Установка бра</td><td>200 ₽</td></tr><tr><td>Мебельный светильник</td><td>200 ₽</td></tr><tr><td>Светильник </td><td>250 ₽</td></tr><tr><td>Галогеновая люстра</td><td>680 ₽</td></tr></tbody></table>
-    </div>
-</div>
-
-
-
-
-
-
-
-<div class="element" id="element_13">
-    <h3 class="element-title">
-        Услуги сантехника
-    </h3>
-    <div class="element-table">
-        <table class="tvtable"><tbody><tr><th>Наименование работ</th><th>Стоимость</th></tr><tr><td><strong>Установка и подключение сантехнических приборов</strong></td><td></td></tr><tr><td>Ванна (чугун, сталь)</td><td>от 1400 ₽</td></tr><tr><td>Установка смесителя</td><td>900 ₽</td></tr><tr><td>Установка раковины, мойки</td><td>от 1200 ₽</td></tr><tr><td>Установка унитаза напольного</td><td>от 1450 ₽</td></tr><tr><td>Установка душ кабинки</td><td>4000 ₽</td></tr><tr><td>Установка посудомоечной машинки</td><td>от 900 ₽</td></tr><tr><td>Установка и подключение стиральной машины</td><td>от 1000 ₽</td></tr><tr><td>Установка водонагревателя от 80 л.</td><td>от 1500 ₽</td></tr><tr><td><strong>Ремонт сантехники</strong></td><td></td></tr><tr><td>Ремонт смесителя (течь)</td><td>от 700 ₽</td></tr><tr><td>Запорная арматура бачка унитаза (течь)</td><td>от 800 ₽</td></tr><tr><td>Замена прокладки в смесителе</td><td>от 400 ₽</td></tr><tr><td>Замена картриджа тонкой очистки</td><td>400 ₽</td></tr><tr><td>Замена шланга и душевой лейки</td><td>500 ₽</td></tr><tr><td>Устранение течи водопроводных труб</td><td>от 900 ₽</td></tr><tr><td>Течь труб канализации</td><td>от 700 ₽</td></tr></tbody></table>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                </div>
-                
-            </div>
-            <div class="push30"></div>
-        </section>
-        
-        <div class="footer-push"></div>
+    <div class="footer-push"></div>
 </div>
 
 
@@ -282,81 +375,87 @@
                 <div class="row">
                     <div class="col-sm-24 col-lg-10">
                         <div class="footer-top-first">
-                            
-                                
-                                <div class="logo upper">
-                                    <a href="index.html">Мастер <span>на все руки</span></a>
-                                    
-                                    <div>ИП Иванов С.М.</div>
-                                    
-                                </div>
-                                
-                            
-                            
-                            <div class="footer-text">
-                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum, 
-который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+
+
+                            <div class="logo upper">
+                                <a href="index.html">Мастер <span>на все руки</span></a>
+
+                                <div>ИП Иванов С.М.</div>
+
                             </div>
-                            
+
+
+                            <div class="footer-text">
+                                По своей сути рыбатекст является альтернативой традиционному lorem ipsum,
+                                который вызывает у некторых людей недоумение при попытках прочитать рыбу текст.
+                            </div>
+
                         </div>
                     </div>
                     <div class="col-sm-8 col-lg-6">
                         <div class="footer-menu">
                             <div class="title">Меню</div>
-                            <ul class=""><li class="first"><a href="o-kompanii.html" >О компании</a></li><li><a href="uslugi/index.html" >Услуги</a></li><li><a href="portfolio/index.html" >Портфолио</a></li><li><a href="novosti/index.html" >Новости</a></li><li class="active"><a href="prajs.html" >Прайс</a></li><li><a href="otzyivyi.html" >Отзывы</a></li><li class="last"><a href="kontaktyi.html" >Контакты</a></li></ul>
+                            <ul class="">
+                                <li class="first"><a href="o-kompanii.html">О компании</a></li>
+                                <li><a href="uslugi/index.html">Услуги</a></li>
+                                <li><a href="portfolio/index.html">Портфолио</a></li>
+                                <li><a href="novosti/index.html">Новости</a></li>
+                                <li class="active"><a href="prajs.html">Прайс</a></li>
+                                <li><a href="otzyivyi.html">Отзывы</a></li>
+                                <li class="last"><a href="kontaktyi.html">Контакты</a></li>
+                            </ul>
                         </div>
                     </div>
                     <div class="col-sm-8">
                         <div class="footer-contacts">
                             <div class="title">Контакты</div>
-                            
-                            <div class="footer-contacts-el footer-phone"><a href="tel:896100001100">8 (9610) 000-11-00</div>
-                            
-                            
-                            
-                            <div class="footer-contacts-el footer-phone"><a href="tel:896100002200">8 (9610) 000-22-00</a></div>
-                            
-                            
-                            
-                            <div class="footer-contacts-el footer-email"><a href="mailto:info@sitename.com">info@sitename.com</a></div>
-                            
-                            
-                            
+
+                            <div class="footer-contacts-el footer-phone"><a href="tel:896100001100">8 (9610) 000-11-00
+                            </div>
+
+
+                            <div class="footer-contacts-el footer-phone"><a href="tel:896100002200">8 (9610)
+                                000-22-00</a></div>
+
+
+                            <div class="footer-contacts-el footer-email"><a href="mailto:info@sitename.com">info@sitename.com</a>
+                            </div>
+
+
                             <div class="footer-contacts-el footer-address">г. Москва, ул. Кольская, 80, офис 315</div>
-                            
-                            
-                            
+
+
                             <div class="social-links">
-                                
-                                <a href="index.html#" class="fb_link"><i class="fa fa-facebook" aria-hidden="true"></i></a> 
-                                
-                                
-                                
+
+                                <a href="index.html#" class="fb_link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+
+
                                 <a href="index.html#" class="ok_link"><i class="fa fa-vk" aria-hidden="true"></i></a>
-                                
-                                
-                                
-                                <a href="index.html#" class="tw_link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                                
-                                
-                                
-                                <a href="index.html#" class="inst_link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                                
-                                
-                                
-                                <a href="index.html#" class="ok_link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
-                                
+
+
+                                <a href="index.html#" class="tw_link"><i class="fa fa-twitter"
+                                                                         aria-hidden="true"></i></a>
+
+
+                                <a href="index.html#" class="inst_link"><i class="fa fa-instagram"
+                                                                           aria-hidden="true"></i></a>
+
+
+                                <a href="index.html#" class="ok_link"><i class="fa fa-odnoklassniki"
+                                                                         aria-hidden="true"></i></a>
+
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-8 footer-top-last text-right-sm">
-                         <div class="title">Получить консультацию</div>
-                         <a href="index.html#callback" class="btn fancyboxModal" data-theme="Заказ обратного звонка">Заказать звонок</a>
-                         <div class="push20"></div>
-                         <div class="element-description">
-                             Остались вопросы? 
-                             Закажите звонок и мы позвоним в удобное для Вас время
-                         </div>
+                        <div class="title">Получить консультацию</div>
+                        <a href="index.html#callback" class="btn fancyboxModal" data-theme="Заказ обратного звонка">Заказать
+                            звонок</a>
+                        <div class="push20"></div>
+                        <div class="element-description">
+                            Остались вопросы?
+                            Закажите звонок и мы позвоним в удобное для Вас время
+                        </div>
                     </div>
                 </div>
             </div>
@@ -369,7 +468,8 @@
                     © 2020 «Master». Разработано в <a href="https://collary.ru/" target="_blank">collary.ru</a>
                 </div>
                 <div class="col-sm-12 text-right-sm">
-                    <div>Для данного сайта мы рекомендуем хостинг <a href="https://timeweb.com/ru/services/hosting/?i=15036" target="_blank">Timeweb</a></div>
+                    <div>Для данного сайта мы рекомендуем хостинг <a
+                            href="https://timeweb.com/ru/services/hosting/?i=15036" target="_blank">Timeweb</a></div>
                 </div>
             </div>
         </div>
@@ -381,50 +481,53 @@
 <div class="modal" id="callback">
     <div class="title-h2 themetitle">Закажите звонок</div>
     <p>
-        Точная стоимость работ определяется специалистом после осмотра. Выезд мастера — бесплатный. Приезд мастера — 45 минут.
+        Точная стоимость работ определяется специалистом после осмотра. Выезд мастера — бесплатный. Приезд мастера — 45
+        минут.
     </p>
-    <br />
-    
+    <br/>
+
     <div class="rf">
         <form method="post" class="ajax_form">
-    <input type="hidden" class="themeinput" name="themeinput">
-    <input type="hidden" name="urlinput" value="https://master.sboxdemo.ru/prajs.html">
-    <div class="row">
-        <div class="col-sm-24">
-            <div class="form-group">
-                <label class="label" for="fio">Ваше имя *</label>
-                <input type="text" name="fio" value="" class="form-control person required" placeholder="Ваше имя *" />
+            <input type="hidden" class="themeinput" name="themeinput">
+            <input type="hidden" name="urlinput" value="https://master.sboxdemo.ru/prajs.html">
+            <div class="row">
+                <div class="col-sm-24">
+                    <div class="form-group">
+                        <label class="label" for="fio">Ваше имя *</label>
+                        <input type="text" name="fio" value="" class="form-control person required"
+                               placeholder="Ваше имя *"/>
+                    </div>
+                </div>
+                <div class="col-sm-24">
+                    <div class="form-group">
+                        <label class="label" for="tel">Телефон *</label>
+                        <input type="text" name="tel" value="" class="form-control tel required"
+                               placeholder="Телефон *"/>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="col-sm-24">
-            <div class="form-group">
-                <label class="label" for="tel">Телефон *</label>
-                <input type="text" name="tel" value="" class="form-control tel required" placeholder="Телефон *" />
+            <div class="agreement form-group">
+                <input type="checkbox" name="agreement" id="agreementcallback" class="required">
+                <label for="agreementcallback">
+                    Даю согласие на обработку персональных данных *
+                </label>
             </div>
-        </div>
-    </div>
-    <div class="agreement form-group">
-        <input type="checkbox" name="agreement" id="agreementcallback" class="required">
-        <label for="agreementcallback">
-            Даю согласие на обработку персональных данных *
-        </label>
-    </div>
-    
-    <div class="form-item">
-	    <div id="recaptcha1"></div>
-	    
-	    <span class="error_g-recaptcha-response error"></span>
-	</div>
-	<div class="push40"></div>
-    
-    <div>
-        <input name="callbackbtn" type="submit" class="btn" value="Отправить" />
-    </div>
-    <div class="push20"></div>
-    <p><span class="red">*</span> <span class="f12">- поля, обязательные для заполнения</span></p>
 
-	<input type="hidden" name="af_action" value="0372c3b0b14fd3d41050bbc96c785ca7" />
-</form>
+            <div class="form-item">
+                <div id="recaptcha1"></div>
+
+                <span class="error_g-recaptcha-response error"></span>
+            </div>
+            <div class="push40"></div>
+
+            <div>
+                <input name="callbackbtn" type="submit" class="btn" value="Отправить"/>
+            </div>
+            <div class="push20"></div>
+            <p><span class="red">*</span> <span class="f12">- поля, обязательные для заполнения</span></p>
+
+            <input type="hidden" name="af_action" value="0372c3b0b14fd3d41050bbc96c785ca7"/>
+        </form>
     </div>
 </div>
 <!--[if lt IE 9]>
@@ -441,7 +544,7 @@
 
 <div class="modal" id="responseMessage">
     <div class="title-h3" id="responseMessageTitle"></div>
-    <hr />
+    <hr/>
     <div class="modal-body" id="responseMessageBody"></div>
     <div class="push25"></div>
     <div class="row">
@@ -452,39 +555,39 @@
 </div>
 
 <script>
-    $(document).on('af_complete', function(event, response) {
+    $(document).on('af_complete', function (event, response) {
         $('body').addClass('jgrowlHide');
-            setTimeout(function() {
+        setTimeout(function () {
             $('body').removeClass('jgrowlHide');
         }, 5000);
-        
-        
-        if(response.success){
-            $.fancybox.open([{ href : '#responseMessage', padding : 0 }] );
+
+
+        if (response.success) {
+            $.fancybox.open([{href: '#responseMessage', padding: 0}]);
             $('#responseMessageTitle').text('Сообщение успешно отправлено!');
-            $('#responseMessageBody').html('<p>'+response.message+'</p>');
-            $('.fancyClose').click(function(){
+            $('#responseMessageBody').html('<p>' + response.message + '</p>');
+            $('.fancyClose').click(function () {
                 $.fancybox.close('#responseMessage');
                 return false;
             });
-        }else{
-            $.fancybox.open([{ href : '#responseMessage', padding : 0 }] );
+        } else {
+            $.fancybox.open([{href: '#responseMessage', padding: 0}]);
             $('#responseMessageTitle').text('Сообщение не отправлено!');
-            $('#responseMessageBody').html('<p>'+response.message+'</p>');
-            $('.fancyClose').click(function(){
+            $('#responseMessageBody').html('<p>' + response.message + '</p>');
+            $('.fancyClose').click(function () {
                 $.fancybox.close('#responseMessage');
                 return false;
             });
         }
     });
-    
-    $(function(){
-        
-        $('.tel').inputmask('+7 (999) 999 99 99',{
+
+    $(function () {
+
+        $('.tel').inputmask('+7 (999) 999 99 99', {
             clearMaskOnLostFocus: true
         });
-        
-        
+
+
     });
 </script>
 
@@ -492,11 +595,20 @@
 <div style="background:#fff; padding:12px 0; color:#23282E; font: normal normal 14px Arial; box-shadow:0 -3px 6px rgba(0,0,0,0.3); position:fixed; width:100%; z-index:500; bottom:0; left:0;text-align:center;">
     <div style="width:1000px;max-width:100%;margin:auto;padding:0 15px;">
         <div class="text-center">
-            <a class="collary-btn" href="http://collary.ru/shablon-sajta-master-na-vse-ruki-na-modx.html" target="_blank" style="display:inline-block;text-decoration: none;color: #fff;background: #E9770D;font-size: 13px;text-transform: uppercase;padding: 16px 45px;cursor: pointer;border: none;border-radius: 5px;">Хочу такой сайт</a>
+            <a class="collary-btn" href="http://collary.ru/shablon-sajta-master-na-vse-ruki-na-modx.html"
+               target="_blank"
+               style="display:inline-block;text-decoration: none;color: #fff;background: #E9770D;font-size: 13px;text-transform: uppercase;padding: 16px 45px;cursor: pointer;border: none;border-radius: 5px;">Хочу
+                такой сайт</a>
         </div>
     </div>
 </div>
 <script type="text/javascript" src="assets/components/ajaxform/js/default.js"></script>
-<script type="text/javascript">AjaxForm.initialize({"assetsUrl":"\/assets\/components\/ajaxform\/","actionUrl":"\/assets\/components\/ajaxform\/action.php","closeMessage":"\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435","formSelector":"form.ajax_form","pageId":10});</script>
+<script type="text/javascript">AjaxForm.initialize({
+    "assetsUrl": "\/assets\/components\/ajaxform\/",
+    "actionUrl": "\/assets\/components\/ajaxform\/action.php",
+    "closeMessage": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435",
+    "formSelector": "form.ajax_form",
+    "pageId": 10
+});</script>
 </body>
 </html>

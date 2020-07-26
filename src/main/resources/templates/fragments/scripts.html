@@ -1,0 +1,64 @@
+<div xmlns:th="http://www.thymeleaf.org" th:remove="tag">
+    <div th:replace="fragments/modals :: callback"></div>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script th:src="@{assets/template/js/modernizr.js}"></script>
+    <script th:src="@{assets/template/js/jquery.fancybox.js}"></script>
+    <script th:src="@{assets/template/js/slick.min.js}"></script>
+    <script th:src="@{assets/template/js/jquery.inputmask.js}"></script>
+    <script th:src="@{assets/template/js/tooltipster.bundle.min.js}"></script>
+    <script th:src="@{assets/template/js/tooltipster-follower.min.js}"></script>
+    <script th:src="@{assets/template/js/onReady.js}"></script>
+
+    <div th:replace="fragments/modals :: response-message"></div>
+
+    <script>
+        $(document).on('af_complete', function (event, response) {
+            $('body').addClass('jgrowlHide');
+            setTimeout(function () {
+                $('body').removeClass('jgrowlHide');
+            }, 5000);
+
+
+            if (response.success) {
+                $.fancybox.open([{href: '#responseMessage', padding: 0}]);
+                $('#responseMessageTitle').text('Сообщение успешно отправлено!');
+                $('#responseMessageBody').html('<p>' + response.message + '</p>');
+                $('.fancyClose').click(function () {
+                    $.fancybox.close('#responseMessage');
+                    return false;
+                });
+            } else {
+                $.fancybox.open([{href: '#responseMessage', padding: 0}]);
+                $('#responseMessageTitle').text('Сообщение не отправлено!');
+                $('#responseMessageBody').html('<p>' + response.message + '</p>');
+                $('.fancyClose').click(function () {
+                    $.fancybox.close('#responseMessage');
+                    return false;
+                });
+            }
+        });
+
+        $(function () {
+
+            $('.tel').inputmask('+7 (999) 999 99 99', {
+                clearMaskOnLostFocus: true
+            });
+
+
+        });
+    </script>
+
+    <script type="text/javascript" th:src="@{assets/components/ajaxform/js/default.js}"></script>
+    <script type="text/javascript">AjaxForm.initialize({
+        "assetsUrl": "\/assets\/components\/ajaxform\/",
+        "actionUrl": "\/assets\/components\/ajaxform\/action.php",
+        "closeMessage": "\u0437\u0430\u043a\u0440\u044b\u0442\u044c \u0432\u0441\u0435",
+        "formSelector": "form.ajax_form",
+        "pageId": 1
+    });</script>
+    <script th:src="@{assets/components/ajaxform/js/lib/jquery.form.min.js}"></script>
+    <script th:src="@{assets/components/ajaxform/js/lib/jquery.jgrowl.min.js}"></script>
+</div>
